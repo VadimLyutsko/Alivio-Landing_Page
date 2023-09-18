@@ -6,6 +6,12 @@ body {
     line-height: 1.5;
 }
 
+@media (max-width: 991px) {
+    .btn {
+        font-size: 18px;
+    }
+}
+
 .none {
     display: none !important;
 }
@@ -24,12 +30,26 @@ body {
 
 /* Grid */
 
-.container{
+.container {
     width: 1400px;
     padding: 0 15px;
     margin: 0 auto;
 }
 
-.container-wide{
+.container-wide {
     width: 1536px;
+}
+
+@media (max-width: 1399px) {
+    .container {
+        width: 100%;
+
+    }
+}
+
+@media (max-width: 1535px) {
+    .container-wide {
+        width: 100%;
+
+    }
 }

@@ -1,6 +1,7 @@
 .header {
     padding: 17px 0;
     border-bottom: 1px solid #c3c9c3;
+    line-height: 1;
 }
 
 .header-row {
@@ -49,8 +50,33 @@
 .header-login-link {
     color: black;
     transition: 0.2s ease;
+    margin-top: -1px;
 }
 
 .header-login-link :hover {
     color: #01996D;
+}
+
+@media (max-width: 1199px) {
+    .header-nav {
+        margin-left: 30px;
+    }
+
+    .header-nav li + li {
+        margin-left: 50px;
+    }
+
+    .header-row{
+        justify-content: space-between;
+    }
+
+    .header-login{
+        margin-left: 30px;
+    }
+}
+
+@media (max-width: 991px){
+.header-nav, .header-login{
+    display: none;
+}
 }

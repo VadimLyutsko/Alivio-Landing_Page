@@ -48,16 +48,30 @@
     object-fit: cover;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 991px){
+.home-bg-img{
+    opacity: 0.5;
+}
+
+    .home{
+        padding: 40px 0;
+        min-height: unset;
+    }
+
+    .home-heading {
+        font-size: 45px;
+        line-height: 1.2;
+    }
+
+    .home-text + * {
+
+    }
 
 }
 
-.home-heading {
-}
 
-.home-text + * {
-}
 
-.home-bg-img img {
-}
+
+
+
 

@@ -104,26 +104,36 @@
 
 @media (max-width: 1399px) {
     .how-it-works {
-
+        padding-top: 60px;
+        padding-bottom: 30px;
     }
 
     .how-it-works-subtitle {
+        font-size: 40px;
+        line-height: 130%;
+        max-width: 530px;
 
     }
 
     .how-it-works-header-content {
-
+        padding-top: 20px;
     }
 
     .how-it-works-header {
+        flex-direction: column;
 
     }
 }
 
 @media (max-width: 1389px) {
-
+    .step:nth-child(2), .step:nth-child(3) {
+        padding-top: 0;
+    }
 }
 
 @media (max-width: 419px) {
+    .how-it-works-steps {
+        grid-template-columns:  1fr;
 
+    }
 }

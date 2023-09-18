@@ -43,6 +43,8 @@
 .story-video {
     max-width: 895px;
     position: relative;
+    border-radius: 18px;
+    overflow: hidden;
 }
 
 

@@ -22,6 +22,9 @@
     <link rel="stylesheet" href="./css/blocks/card.css">
     <link rel="stylesheet" href="./css/blocks/avatar.css">
     <link rel="stylesheet" href="./css/blocks/footer.css">
+    <link rel="stylesheet" href="./css/blocks/mobile-nav-button.css">
+    <link rel="stylesheet" href="./css/blocks/mobile-nav.css">
+
 
 </head>
 <body>
@@ -43,9 +46,31 @@
                 <a href="#" class="btn">Start Trial</a>
             </div>
 
+            <button type="button" class="mobile-nav-button">
+                <span class="mobile-nav-button__icon"></span>
+            </button>
+
         </div>
     </div>
 </header>
+
+<div class="mobile-nav">
+    <img class="mobile-nav-logo" src="./img/logo.svg" alt="Logo">
+
+    <nav class="mobile-nav-list">
+        <ul>
+            <li><a href="#">Why Alivio</a></li>
+            <li><a href="#">Solutions</a></li>
+            <li><a href="#">Community</a></li>
+            <li><a href="#">Pricing</a></li>
+        </ul>
+    </nav>
+
+    <div class="mobile-login">
+        <a href="#">Sign in</a>
+        <a href="#" class="btn btn-big">Start Trial</a>
+    </div>
+</div>
 
 <main>
 
@@ -143,13 +168,20 @@
                         <a class="btn btn-big" href="#">Let’s get started</a>
                     </div>
                 </div>
+
                 <div class="story-video">
-                    <div class="story-video-overlay">
-                        <button class="story-video-btn">
-                            <img src="./img/story/play-white.svg" alt="Play">
+                    <div id="video-story-overlay" class="story-video-overlay">
+                        <button id="video-story-btn" class="story-video-btn">
+                            <img id="video-story-btn-icon" width="82" height="82" src="./img/story/play-white.svg" alt="Play">
                         </button>
                     </div>
-                    <img src="./img/story/video-cover.jpg" alt="Video" class="story-video-object">
+
+                    <!--                                        <img src="./img/story/video-cover.jpg" alt="Video" class="story-video-object">-->
+
+                    <video class="story-video-object" id="video-story">
+                        <source src="./video/customer-story.mp4" type="video/mp4">
+                    </video>
+
                 </div>
             </div>
         </div>
@@ -230,7 +262,6 @@
 </main>
 
 
-<footer></footer>
-
+<script src="./js/main.js"></script>
 </body>
 </html>
